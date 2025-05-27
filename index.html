@@ -3,157 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HandyNB | Helping Our Moncton Community</title>
+  <title>HandyNB - Helping Hands in Your Community</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fb;
+      background: #f6f8fa;
       color: #333;
     }
     header {
-      background-color: #6c63ff;
+      background-color: #4d6ac9;
       color: white;
-      padding: 40px 20px;
+      padding: 1rem;
       text-align: center;
     }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+    header img {
+      max-height: 60px;
+      vertical-align: middle;
     }
-    .hero {
-      background-color: #ecebfd;
-      padding: 60px 20px;
-      text-align: center;
+    header h1 {
+      margin: 0.5rem 0 0 0;
+      font-size: 1.8rem;
     }
-    .hero h1 {
-      font-size: 2.5em;
-      color: #4b47c2;
-    }
-    .hero p {
-      font-size: 1.2em;
-      color: #666;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
+    .content {
+      padding: 2rem;
+      max-width: 800px;
       margin: auto;
     }
-    h2 {
-      color: #4b47c2;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "✔";
-      color: #4b47c2;
-      padding-right: 10px;
-    }
-    form input, form textarea {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
+    .form-section {
+      background: white;
+      padding: 2rem;
       border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
       border: 1px solid #ccc;
+      font-size: 1rem;
     }
     form button {
-      background-color: #6c63ff;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #4d6ac9;
       color: white;
-      padding: 12px 24px;
       border: none;
-      border-radius: 8px;
+      border-radius: 4px;
+      font-size: 1rem;
       cursor: pointer;
-      font-size: 1em;
     }
-    .contact-info p {
-      margin: 5px 0;
+    form button:hover {
+      background-color: #3a56a5;
     }
-    footer {
-      background-color: #4b47c2;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    @media screen and (max-width: 600px) {
+      .content {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>HandyNB</h1>
-    <p>Neighbors Helping Neighbors in Moncton</p>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#how">How It Works</a>
-      <a href="#book">Book</a>
-      <a href="#apply">Join Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="https://i.imgur.com/bGCZ2Xb.png" alt="HandyNB Logo" />
+    <h1>HandyNB – Helping Hands in Your Community</h1>
   </header>
 
-  <section class="hero">
-    <h1>In Moncton, We Help Each Other</h1>
-    <p>HandyNB connects neighbors who need a hand with those who want to help. Fast, friendly, and local.</p>
-  </section>
+  <div class="content">
+    <p>Welcome to HandyNB – where neighbors help neighbors! Whether you need a small job done or want to offer your help, we connect the community with trust and care.</p>
 
-  <section id="services">
-    <h2>What We Offer</h2>
-    <ul>
-      <li>Grocery Pickup & Delivery</li>
-      <li>Home & Yard Cleaning</li>
-      <li>Snow Removal & Lawn Mowing</li>
-      <li>Small Repairs & Tech Help</li>
-      <li>Heavy Lifting & Moving Assistance</li>
-    </ul>
-  </section>
-
-  <section id="how">
-    <h2>How It Works</h2>
-    <ul>
-      <li>📲 Submit a task through our form</li>
-      <li>✅ We match you with a trusted local helper</li>
-      <li>🤝 You pay only when the job is complete</li>
-      <li>💬 You rate your helper and help us grow the community</li>
-    </ul>
-  </section>
-
-  <section id="book">
-    <h2>Book a Task</h2>
-    <form>
-      <input type="text" placeholder="Your Full Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone Number" required />
-      <textarea rows="5" placeholder="Describe the task you need help with..." required></textarea>
-      <button type="submit">Submit Request</button>
-    </form>
-  </section>
-
-  <section id="apply">
-    <h2>Become a Helper</h2>
-    <p>Want to earn money helping your neighbors? Join HandyNB today and make a difference.</p>
-    <form>
-      <input type="text" placeholder="Your Full Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone Number" required />
-      <textarea rows="4" placeholder="Tell us about your skills and availability..." required></textarea>
-      <button type="submit">Apply Now</button>
-    </form>
-  </section>
-
-  <section id="contact" class="contact-info">
-    <h2>Contact Us</h2>
-    <p>Email: contact@handynb.ca</p>
-    <p>Phone: (506) 123-4567</p>
-    <p>Facebook: <a href="https://facebook.com/handynb" target="_blank">facebook.com/handynb</a></p>
-    <p>Instagram: <a href="https://instagram.com/handynb" target="_blank">@handynb</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 HandyNB — Proudly Serving Greater Moncton with Heart</p>
-  </footer>
+    <div class="form-section">
+      <h2>Contact / Book a Helper</h2>
+      <form action="https://formspree.io/f/mjkwqqyw" method="POST">
+        <label>
+          Your Name:
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Your Email:
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Your Phone:
+          <input type="tel" name="phone" />
+        </label>
+        <label>
+          Task Description:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
